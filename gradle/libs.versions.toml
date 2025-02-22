@@ -1,0 +1,91 @@
+[versions]
+agp = "8.8.1"
+kotlin = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.0"
+constraintlayout = "2.2.0"
+room = "2.6.1"
+retrofit = "2.9.0"
+coroutine = "1.7.3"
+dagger = "2.50"
+lifecycle = "2.8.7"
+okhttp3 = "4.9.0"
+glide = "4.16.0"
+activityVersion = "1.10.0"
+threetenabp = "1.4.5"
+shimmer = "0.5.0"
+
+[libraries]
+core-impl-androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+core-impl-androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+core-impl-squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+core-impl-squareup-retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+core-impl-squareup-okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+core-impl-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutine" }
+core-impl-kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutine" }
+core-kapt-androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+core-testimpl-room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+main-impl-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+main-impl-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+main-impl-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+main-impl-android-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+main-impl-google-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
+main-impl-androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+main-impl-androidx-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+main-impl-androidx-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+main-impl-bumptech-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+main-impl-jakewharton = { group = "com.jakewharton.threetenabp", name = "threetenabp", version.ref = "threetenabp" }
+main-impl-facebook-shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer" }
+main-kapt-glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+main-kapt-google-dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+main-testimpl-junit = { group = "junit", name = "junit", version.ref = "junit" }
+main-androidtestimpl-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+main-androidtestimpl-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activityVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+
+[bundles]
+core-impls = [
+    "core-impl-androidx-room-runtime",
+    "core-impl-androidx-room-ktx",
+    "core-impl-squareup-retrofit",
+    "core-impl-squareup-retrofit-converter-gson",
+    "core-impl-squareup-okhttp3-logging-interceptor",
+    "core-impl-kotlinx-coroutines-core",
+    "core-impl-kotlinx-coroutines-android"
+]
+
+main-impls = [
+    "main-impl-androidx-appcompat",
+    "main-impl-androidx-core-ktx",
+    "main-impl-androidx-constraintlayout",
+    "main-impl-android-material",
+    "main-impl-google-dagger",
+    "main-impl-androidx-activity",
+    "main-impl-androidx-livedata",
+    "main-impl-androidx-viewmodel",
+    "main-impl-bumptech-glide",
+    "main-impl-jakewharton",
+    "main-impl-facebook-shimmer"
+]
+
+main-kapts = [
+    "main-kapt-glide-compiler",
+    "main-kapt-google-dagger-compiler"
+]
+
+main-androidtestimpls = [
+    "main-androidtestimpl-androidx-junit",
+    "main-androidtestimpl-androidx-espresso-core"
+]
